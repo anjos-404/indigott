@@ -5,7 +5,7 @@ return(
     PAGAMENTO
 </p>
 <p className="payment">Por favor faça seu pagamento via pix e anexe o comprovante em anexo.</p>
-<p className="payment">Pix: 41998296746</p>
+<p className="payment mb-2">Pix: 41998296746</p>
 <p className="mb-3 payment">Cada aula avulsa tem o custo de R$10,00 e o combo com todas as aulas é R$65,00</p>
 
 </div>

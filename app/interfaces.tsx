@@ -1,5 +1,5 @@
  export interface Aulas{
-    inicio: number;
-    final: number;
+    inicio: string;
+    final: string;
     professor: string;
 }
