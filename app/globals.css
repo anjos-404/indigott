@@ -5,6 +5,50 @@
   --foreground: #171717;
 }
 
+
+
+input[type="checkbox"]:checked + label {
+  background-color: #3b3860;
+}
+
+input[type="checkbox"]:checked + label::after {
+  content: "✓";
+  font-size: 14px;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("/gotham.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("/gotham-bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Owners";
+  src: url("/owners.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Owners";
+  src: url("/owners-bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -19,11 +63,15 @@
   }
 }
 
+
+
 body {
   background: var(--background);
   color:white;
 
-    font-family:Gotham;
+  font-family: "Gotham", sans-serif;
+
+
 
 }
 
@@ -31,6 +79,9 @@ body {
   font-size: 12px;
 }
 
+.font-owners {
+  font-family: "FontOwners", sans-serif;
+}
 
 .desc{
     font-size: 16px;

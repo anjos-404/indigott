@@ -18,7 +18,25 @@ export default function Checkboxs({ aulas1,aulas2,titulo1,titulo2 }: Props) {
     {aulas1.map((element, index) => (
       <div key={index} className="flex items-center leading-8">
         
-        <input type="checkbox" className="mr-2" />
+      <input
+  type="checkbox"
+  id={`chk1${index}`}
+  className="sr-only"
+/>
+
+<label
+  htmlFor={`chk1${index}`}
+  className="
+    min-w-7 h-7
+    cursor-pointer
+    rounded-sm
+    bg-[#2a283f]
+    flex items-center justify-center
+    text-white mr-1
+  "
+>
+</label>
+
 
         <span className=" shrink-0">
           {element.inicio} até {element.final}
@@ -38,7 +56,27 @@ export default function Checkboxs({ aulas1,aulas2,titulo1,titulo2 }: Props) {
     {aulas2.map((element, index) => (
       <div key={index} className="flex items-center leading-8">
         
-        <input type="checkbox" className="mr-2" />
+       <input
+  type="checkbox"
+  id={`chk2${index}`}
+  className="sr-only"
+/>
+
+<label
+  htmlFor={`chk2${index}`}
+  className="
+    min-w-7 h-7
+    cursor-pointer
+    rounded-sm
+    bg-[#2a283f]
+    flex items-center justify-center
+    transition
+    text-white
+    mr-1
+  "
+>
+</label>
+
 
         <span className=" shrink-0">
           {element.inicio} até {element.final}
