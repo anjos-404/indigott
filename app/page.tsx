@@ -33,8 +33,8 @@ export default function Home() {
       className="w-[50%] h-auto"
     />
   </div>
-        <div className="  min-h-screen flex      justify-center items-center w-full bg-[#110F1C] h-full md:w-[60%] md:justify-start">
-    <div className=" pr-16 pl-16  flex mt-8 flex-col md:pr-0 md:pl-0  md: md:mt-0 md:justify-center md:ml-24 h-full">
+        <div className="  md:min-h-screen flex      justify-center items-center w-full bg-[#110F1C] md:h-full md:w-[60%] md:justify-start">
+    <div className=" pr-16 pl-16  flex mt-8 flex-col md:pr-0 md:pl-0 md:mt-0 md:justify-center md:ml-24 md:h-full">
           <Introduction></Introduction>
           <Checkboxs titulo1="AULAS NO SÁBADO | 14.09" aulas1={aulas} titulo2="AULAS NO DOMINGO | 15.09" aulas2={aulas2}></Checkboxs>
           <Payment></Payment>
